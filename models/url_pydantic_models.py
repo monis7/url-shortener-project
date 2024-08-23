@@ -1,7 +1,9 @@
-from pydantic import BaseModel
+# models/url_pynamodb_models.py
+
 from pynamodb.models import Model
 from pynamodb.attributes import UnicodeAttribute, UTCDateTimeAttribute
 from datetime import datetime
+from pydantic import BaseModel
 
 class URLMapping(Model):
     class Meta:
